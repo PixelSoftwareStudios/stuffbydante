@@ -1,0 +1,67 @@
+/*
+	This code is copyleft, meaning: 
+
+	You are free you modify and redistribute it on the grounds that:
+
+	You do not remove this warning.
+	
+	You link back to the website where you found this code
+	
+	You do not monetize this code.
+
+	You do not use this code for malicious purposes.
+
+	MOST IMPORTANT! You credit the author (Dante).
+
+	If you agree to these terms and conditions you are allowed to scroll on.
+
+	If you don't agree, please click off of this code.
+*/
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	left: 0;
+	overflow: hidden;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	opacity: 0.9;
+}
+
+li.navbutton {
+	float: left;
+}
+
+li.icon {
+	float: right;
+	vertical-align: center;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: "Verdana", sans-serif;
+}
+
+li a:hover {
+	background-color: #111;
+}
+
+body {
+	background-color: #000;
+}
+
+#jumbotron-welcome {
+	text-align: center;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+	width: 70%;
+	margin: auto;
+}

@@ -1,0 +1,7 @@
+.trumpface {
+	position: absolute;
+}
+.canvas {
+	position: absolute;
+	pointer-events:none;
+}
