@@ -1,6 +1,8 @@
+import { Card, Divider } from "@nextui-org/react";
 
 export default function Page() {
 	return (
+		<>
 		<section>
 			<h1 className="mb-8 text-3xl font-semibold">
 				Dante Ielpi
@@ -15,5 +17,9 @@ export default function Page() {
 				Currently he works at a [undisclosed as of now] startup as a Full Stack engineer, mainly utilizing React (Next.js), TypeScript, and Go. On the side, he works as a Freelance Web Developer and Consultant, providing his web design and development services to local clients.
 			</p>
 		</section>
+		<div>
+			<Divider />
+		</div>
+		</>
 	)
 }
