@@ -64,22 +64,22 @@ export const Header = () => {
 			isBlurred={false}
 			disableAnimation
 			classNames={{
-				wrapper: "px-0",
+				wrapper: "px-0 select-none print:hidden",
 				menu: "h-fit border-b-1 pb-10"
 			}}
 		>
 			<NavbarMenuToggle className="sm:hidden" />
-			<NavbarContent className="hidden sm:flex">
+			<NavbarContent className="hidden sm:flex gap-5">
 				{navRoutes.map((route, i) => (
 					<NavbarItem key={i}>
 						<Link
 							href={route.path}
-							className="p-1 pl-0 text-white"
+							className={`p-2 text-white ${i == 0 && 'pl-0'}`}
 						>
 							{route.name}
 						</Link>
 					</NavbarItem>
-				))}	
+				))}
 			</NavbarContent>
 			<NavbarContent className="gap-2" justify="end">
 				{socialLinks.map((social, i) => (
