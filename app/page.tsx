@@ -1,4 +1,7 @@
-import { Card, Divider } from "@nextui-org/react";
+"use client";
+
+import { Divider } from "@nextui-org/react";
+import { TechSkills } from "./components/TechSkills";
 
 export default function Page() {
 	return (
@@ -19,6 +22,8 @@ export default function Page() {
 		</section>
 		<div>
 			<Divider />
+			<h1 className="text-3xl font-semibold my-8">Skills:</h1>
+			<TechSkills />
 		</div>
 		</>
 	)

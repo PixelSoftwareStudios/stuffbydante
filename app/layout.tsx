@@ -2,8 +2,8 @@ import './global.css'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 
-import { Header } from './components/nav'
-import Footer from './components/footer'
+import { Header } from './components/Header'
+import Footer from './components/Footer'
 
 import type { Metadata } from 'next'
 import { baseUrl } from './sitemap'
@@ -60,14 +60,14 @@ export default function RootLayout({
 		<html
 			lang="en"
 			className={cx(
-				'text-black bg-white dark:text-white dark:bg-black',
+				'text-white bg-black',
 				GeistSans.variable,
 				GeistMono.variable
 			)}
 		>
 			<body className="antialiased max-w-2xl mt-8 mx-auto px-4">
 				<Providers>
-					<main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
+					<main className="dark flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
 						<Header />
 						{children}
 						<Footer />
