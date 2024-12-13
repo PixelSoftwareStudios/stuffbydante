@@ -7,8 +7,8 @@ import {
 
 import { skillList } from "./skill_data";
 
-export const TechSkills = () => {
-
+export const TechSkillList = () => {
+	// Search bar, "See if I have what you need"
 	return (
 		<Accordion variant="bordered" selectionMode="multiple" defaultExpandedKeys={["1", "2"]}>
 			{skillList.map((item, i) => (

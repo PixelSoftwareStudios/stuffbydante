@@ -1,7 +1,13 @@
 "use client";
 
 import { Divider } from "@nextui-org/react";
-import { TechSkills } from "./components/TechSkills";
+import {
+	TechSkillList,
+	CertificateList,
+	ExperienceList,
+	ProjectList,
+	ContactList,
+} from "./components/sections/Home";
 
 export default function Page() {
 	return (
@@ -16,19 +22,23 @@ export default function Page() {
 			<p className="mb-4">
 				A dedicated and persistent problem solver with a strong sense of ownership, he brings a product-focused mindset, a passion for quality assurance, and meticulous attention to detail to every project, ensuring an optimal user experience.
 			</p>
-			<p className="mb-4">
+			<p className="mb-8">
 				Currently, he is a Full Stack Engineer at an [undisclosed as of now] early-stage startup, building scalable web applications using React (Next.js), TypeScript, and Go.<br />On the side, he operates as a Freelance Web Developer and Consultant, delivering high-performance, custom-tailored web solutions such as portfolio websites and e-commerce platforms to local businesses and individual clients.
 			</p>
 		</section>
 		<div>
 			<Divider />
-			<h1 className="text-3xl font-semibold my-8">Skills:</h1>
-			<TechSkills />
+			<h1 className="text-3xl font-semibold mt-10 mb-8">Skills:</h1>
+			<TechSkillList />
+			<CertificateList />
+			<ExperienceList />
+			<ProjectList />
+			<ContactList />
 			{/* 
 				Certificates (Small form factor horizontal scrollable  list)
 				Experience
-				Projects (major ones) with See More button that navigates to /projects
-				Contact with text saying Best way is through Linkedin, but also show email "Or mail me at" Snippet
+				Projects (major ones) Card with See More button that navigates to /projects
+				Contact with text saying Best way is through Linkedin, but also show email "Or mail me at dante@stuffbydante.net" Snippet
 			*/}
 		</div>
 		</>
