@@ -57,7 +57,7 @@ const socialLinks: SocialLink[] = [
 // -> tools
 // -> games
 
-export function Header() {
+export const Header = () => {
 	return (
 		<Navbar
 			isBordered
