@@ -6,7 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "cf-build": "bunx @cloudflare/next-on-pages@1"
+    "cf-build": "bunx @cloudflare/next-on-pages@1",
+    "biome:lint": "biome lint",
+    "biome:format": "biome format --write",
+    "biome:check": "biome check",
+    "biome:check:apply": "biome check --apply",
+    "install-hooks": "bunx lefthook install"
   },
   "dependencies": {
     "@nextui-org/react": "^2.6.8",
@@ -25,6 +30,8 @@
     "typescript": "5.3.3"
   },
   "devDependencies": {
-    "@cloudflare/next-on-pages": "^1.13.7"
+    "@biomejs/biome": "1.9.4",
+    "@cloudflare/next-on-pages": "^1.13.7",
+    "lefthook": "1.9.2"
   }
 }

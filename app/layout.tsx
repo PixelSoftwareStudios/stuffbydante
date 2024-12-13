@@ -2,12 +2,12 @@ import './global.css'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 
-import { Header } from './components/Header'
-import { Footer } from './components/Footer'
+import { Header, Footer } from './components/common'
 
 import type { Metadata } from 'next'
-import { baseUrl } from './sitemap'
 import { Providers } from './providers'
+
+const baseUrl = "https://stuffbydante.net"
 
 export const metadata: Metadata = {
 	metadataBase: new URL(baseUrl),
