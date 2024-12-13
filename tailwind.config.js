@@ -13,6 +13,8 @@ module.exports = {
 	},
 	darkMode: "class",
 	plugins: [
-		nextui()
+		nextui({
+			defaultTheme: "dark"
+		})
 	],
 };
