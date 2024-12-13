@@ -24,6 +24,12 @@ export default function Page() {
 			<Divider />
 			<h1 className="text-3xl font-semibold my-8">Skills:</h1>
 			<TechSkills />
+			{/* 
+				Certificates (Small form factor horizontal scrollable  list)
+				Experience
+				Projects (major ones) with See More button that navigates to /projects
+				Contact with text saying Best way is through Linkedin, but also show email "Or mail me at" Snippet
+			*/}
 		</div>
 		</>
 	)

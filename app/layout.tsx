@@ -3,7 +3,7 @@ import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 
 import { Header } from './components/Header'
-import Footer from './components/Footer'
+import { Footer } from './components/Footer'
 
 import type { Metadata } from 'next'
 import { baseUrl } from './sitemap'
