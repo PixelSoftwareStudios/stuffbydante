@@ -6,5 +6,6 @@ Now in 2024, I have begun creating a modern version
 Tech Stack:
 React.js
 Next.js
+NextUI
 
-Deployed using Vercel
+Deployed using Cloudflare Pages
