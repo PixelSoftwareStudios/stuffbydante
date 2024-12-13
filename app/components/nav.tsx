@@ -16,7 +16,7 @@ const navItems = {
 // -> tools
 // -> games
 
-export function Navbar() {
+export function Header() {
 	return (
 		<aside className="mb-16 tracking-tight">
 			<div className="lg:sticky lg:top-20">
