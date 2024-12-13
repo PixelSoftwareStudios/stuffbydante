@@ -7,7 +7,7 @@ import Footer from './components/Footer'
 
 import type { Metadata } from 'next'
 import { baseUrl } from './sitemap'
-import Providers from './providers'
+import { Providers } from './providers'
 
 export const metadata: Metadata = {
 	metadataBase: new URL(baseUrl),

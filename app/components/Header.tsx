@@ -1,7 +1,6 @@
-import { ArrowIcon } from '@/assets/icons/ArrowIcon'
+import { ArrowIcon } from '@/assets/icons/ArrowIcon';
 import {
 	Navbar,
-	NavbarBrand,
 	NavbarContent,
 	NavbarItem,
 	NavbarMenuToggle,
@@ -10,83 +9,107 @@ import {
 	Link,
 } from "@nextui-org/react";
 
-import NextLink from 'next/link'
+import { ReactNode } from 'react';
 
-const navItems = {
-	'/': {
-		name: 'Home',
-	},
-	'/about': {
-		name: 'About',
-	},
-	'/projects': {
-		name: 'Projects',
-	},
+interface NavRoute {
+	name: string
+	path: string
 }
 
+interface SocialLink {
+	name: string
+	link: string
+	icon?: ReactNode
+}
+
+const navRoutes: NavRoute[] = [
+	{
+		name: 'Home',
+		path: '/'
+	},
+	{
+		name: 'About',
+		path: '/about'
+	},
+	{
+		name: 'Projects',
+		path: '/projects'
+	},
+]
+
+const socialLinks: SocialLink[] = [
+	{
+		name: "GitHub",
+		link: "https://github.com/PixelSoftwareStudios",
+	},
+	{
+		name: "Other GitHub",
+		link: "https://github.com/frostbournesb",
+	},
+	{
+		name: "Linkedin",
+		link: "https://www.linkedin.com/in/dielpi/",
+	},
+]
+
+// https://nextui.org/docs/components/navbar#with-dropdown-menu
 // projects 
 // -> tools
 // -> games
 
 export function Header() {
 	return (
-		<aside className="mb-16 tracking-tight select-none">
-			<div className="lg:sticky lg:top-20">
-				<nav
-					className="flex flex-row items-start justify-between relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
-					id="nav"
-				>
-					<div className="flex flex-row space-x-0 mr-10">
-						{Object.entries(navItems).map(([path, { name }]) => {
-							return (
-								<Link
-									key={path}
-									href={path}
-									className="transition-all hover:text-neutral-200 flex align-middle py-2 pr-2 mr-8"
-								>
-									{name}
-								</Link>
-							)
-						})}
-					</div>
-					<ul className="font-sm mt-2 flex flex-col space-x-0 space-y-2 md:flex-row md:space-x-4 md:space-y-0 text-neutral-300">
-						<li>
-							<a
-								className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-								rel="noopener noreferrer"
-								target="_blank"
-								href="https://github.com/PixelSoftwareStudios"
-							>
-								<ArrowIcon />
-								<p className="ml-2 h-7">GitHub</p>
-							</a>
-						</li>
-						<li>
-							<a
-								className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-								rel="noopener noreferrer"
-								target="_blank"
-								href="https://github.com/frostbournesb"
-							>
-								<ArrowIcon />
-								<p className="ml-2 h-7">Other GitHub</p>
-							</a>
-						</li>
-						<li>
-							<a
-								className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-								rel="noopener noreferrer"
-								target="_blank"
-								href="https://www.linkedin.com/in/dielpi/"
-							>
-								<ArrowIcon />
-								<p className="ml-2 h-7">LinkedIn</p>
-							</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</aside>
-		// <Navbar />
+		<Navbar
+			isBordered
+			isBlurred={false}
+			disableAnimation
+			classNames={{
+				wrapper: "px-0",
+				menu: "h-fit border-b-1 pb-10"
+			}}
+		>
+			<NavbarMenuToggle className="sm:hidden" />
+			<NavbarContent className="hidden sm:flex">
+				{navRoutes.map((route, i) => (
+					<NavbarItem key={i}>
+						<Link
+							href={route.path}
+							className="p-1 pl-0 text-white"
+						>
+							{route.name}
+						</Link>
+					</NavbarItem>
+				))}	
+			</NavbarContent>
+			<NavbarContent className="gap-2" justify="end">
+				{socialLinks.map((social, i) => (
+					<NavbarItem key={i}>
+						<Link
+							isExternal
+							href={social.link}
+							className="flex gap-2 p-1 pr-0 items-center text-white"
+						>
+							{
+								social.icon || <ArrowIcon />
+							}
+							{social.name}
+						</Link>
+					</NavbarItem>
+				))}
+			</NavbarContent>
+			<NavbarMenu>
+				{navRoutes.map((route, i) => (
+					<NavbarMenuItem key={`${route.name}-${i}`}>
+						<Link
+							className="w-full text-white"
+							href={route.path}
+							size="lg"
+						>
+							{route.name}
+						</Link>
+					</NavbarMenuItem>
+				))}
+			</NavbarMenu>
+		</Navbar>
 	)
 }

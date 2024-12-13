@@ -17,17 +17,26 @@ export const TechSkills = () => {
 					aria-label={item.category}
 					title={item.category}
 				>
-					{item.skills.map((skillName, i) => (
+					{item.skills.map((skill, i) => (
 						<Chip
 							key={i}
-							avatar={<Avatar name={skillName} src="https://i.pravatar.cc/300?u=a042581f4e29026709d" />}
 							variant="flat"
+							avatar={
+								<Avatar 
+									name={skill.name}
+									style={{
+										backgroundColor: skill.color
+									}}
+									getInitials={() => ""}
+								/>
+							}
+							radius="lg"
 							classNames={{
-								"base": "mr-2 mb-2",
-								"avatar": "select-none",
+								base: "mr-2 mb-2",
+								avatar: "w-3 h-3 ml-1",
 							}}
 						>
-							{skillName}
+							{skill.name}
 						</Chip>
 					))}
 				</AccordionItem>
