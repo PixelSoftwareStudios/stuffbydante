@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "cf-build": "bunx @cloudflare/next-on-pages@1"
   },
   "dependencies": {
     "@nextui-org/react": "^2.6.8",
