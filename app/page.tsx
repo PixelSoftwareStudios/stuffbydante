@@ -30,7 +30,8 @@ export default function Page() {
 			<Divider />
 			<h1 className="text-3xl font-semibold mt-10 mb-8">Skills:</h1>
 			<TechSkillList />
-			<CertificateList />
+			{/* <h1 className="text-3xl font-semibold mt-10 mb-8">Certificates:</h1>
+			<CertificateList /> */}
 			<ExperienceList />
 			<ProjectList />
 			<ContactList />

@@ -64,7 +64,7 @@ export const Header = () => {
 			isBlurred={false}
 			disableAnimation
 			classNames={{
-				wrapper: "px-0",
+				wrapper: "px-0 select-none print:hidden",
 				menu: "h-fit border-b-1 pb-10"
 			}}
 		>
