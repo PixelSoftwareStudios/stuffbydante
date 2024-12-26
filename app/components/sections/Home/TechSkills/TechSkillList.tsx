@@ -21,9 +21,9 @@ export const TechSkillList = () => {
 					aria-label={item.category}
 					title={item.category}
 				>
-					{item.skills.map((skill, i) => (
+					{item.skills.map((skill) => (
 						<Chip
-							key={i}
+							key={skill.name}
 							variant="flat"
 							avatar={
 								<Avatar 
@@ -38,6 +38,7 @@ export const TechSkillList = () => {
 							classNames={{
 								base: "mr-2 mb-2",
 								avatar: "w-3 h-3 ml-1",
+								content: "select-all",
 							}}
 						>
 							{skill.name}
