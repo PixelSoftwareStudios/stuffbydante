@@ -23,7 +23,7 @@ export default function Page() {
 				A dedicated and persistent problem solver with a strong sense of ownership, he brings a product-focused mindset, a passion for quality assurance, and meticulous attention to detail to every project, ensuring an optimal user experience.
 			</p>
 			<p className="mb-8">
-				Currently, he is a Full Stack Engineer at an [undisclosed as of now] early-stage startup, building scalable web applications using React (Next.js), TypeScript, and Go.<br />On the side, he operates as a Freelance Web Developer and Consultant, delivering high-performance, custom-tailored web solutions such as portfolio websites and e-commerce platforms to local businesses and individual clients.
+				Currently, he is a Full Stack Engineer at an early-stage startup named SERA, building scalable web applications using React, TypeScript, and Go.<br />On the side, he operates as a Freelance Web Developer and Consultant, delivering high-performance, custom-tailored web solutions such as portfolio websites and e-commerce platforms to local businesses and individual clients.
 			</p>
 		</section>
 		<div>
