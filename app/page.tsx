@@ -28,15 +28,23 @@ export default function Page() {
 		</section>
 		<div>
 			<Divider />
-			<h1 className="text-3xl font-semibold mt-10 mb-8" id="projectsummary">Projects:</h1>
-			<ProjectList />
-			<h1 className="text-3xl font-semibold mt-10 mb-8" id="skills">Skills:</h1>
+			{/* <h1 className="text-3xl font-semibold mt-10 mb-8 scroll-mt-24" id="projectsummary">
+				<a href="#projectsummary">Projects</a>
+			</h1>
+			<ProjectList /> */}
+			<h1 className="text-3xl font-semibold mt-10 mb-8 scroll-mt-24" id="skills">
+				<a href="#skills">Skills</a>
+			</h1>
 			<TechSkillList />
-			{/* <h1 className="text-3xl font-semibold mt-10 mb-8" id="certs">Certificates:</h1> */}
-			{/* <CertificateList /> */}
-			<h1 className="text-3xl font-semibold mt-10 mb-8" id="experience">Experience:</h1>
-			<ExperienceList />
-			<h1 className="text-3xl font-semibold mt-10 mb-8" id="contact">Contact:</h1>
+			{/* <h1 className="text-3xl font-semibold mt-10 mb-8" id="certs">Certificates:</h1>}
+			<CertificateList /> */}
+			{/* <h1 className="text-3xl font-semibold mt-10 mb-8" id="experience">
+				<a href="#experience">Experience</a>
+			</h1>
+			<ExperienceList /> */}
+			<h1 className="text-3xl font-semibold mt-10 mb-8" id="contact">
+				<a href="#contact">Contact</a>
+			</h1>
 			<ContactList />
 			{/* 
 				Certificates (Small form factor horizontal scrollable  list)

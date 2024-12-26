@@ -27,19 +27,21 @@ export const ContactList = () => {
 						/>
 					}
 					variant="bordered"
-					className="select-all"
 					classNames={{
+						base: "select-none",
 						pre: "flex items-center"
 					}}
 					codeString="dante@stuffbydante.net"
 				>
-					<span><span>d</span>
-					<span>a</span>
-					<span>n</span>
-					<span>t</span>
-					<span>e</span>
-					<span>&#64;</span>
-					<span>stuffbydante.net</span></span>
+					<span className="select-all">
+						<span>d</span>
+						<span>a</span>
+						<span>n</span>
+						<span>t</span>
+						<span>e</span>
+						<span>&#64;</span>
+						<span>stuffbydante.net</span>
+					</span>
 				</Snippet>
 			</div>
 		</div>

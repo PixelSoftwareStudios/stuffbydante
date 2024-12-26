@@ -28,16 +28,19 @@ const frontendSkills: SkillDisplay[] = [
 	{ name: "React", color: "#61DAFB" },
 	{ name: "Next.js", color: "#000000" },
 	{ name: "SvelteKit", color: "#FF3E00" },
-	{ name: "Unity", color: "#000000" },
 	{ name: "Tailwind CSS", color: "#38B2AC" },
+	{ name: "Redux Toolkit", color: "#764ABC" },
 	{ name: "Material UI", color: "#007FFF" },
+	{ name: "NextUI", color: "#0072F5" },
 	{ name: "DaisyUI", color: "#5A4AD1" },
 	{ name: "CSS", color: "#2965F1" },
+	{ name: "Unity", color: "#000000" },
 	{ name: "Flutter", color: "#02569B" },
 	{ name: "Shopify Liquid", color: "#95BF47" },
 	{ name: "EJS", color: "#A91E50" },
+	{ name: "Astro", color: "#FF5D01" },
 	{ name: "Vite", color: "#646CFF" },
-	{ name: "Astro", color: "#FF5D01" }
+	{ name: "Google Maps API", color: "#34A853" }
 ]
 
 const backendSkills: SkillDisplay[] = [
