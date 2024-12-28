@@ -39,7 +39,9 @@ const frontendSkills: SkillDisplay[] = [
 	{ name: "Shopify Liquid", color: "#95BF47" },
 	{ name: "EJS", color: "#A91E50" },
 	{ name: "Astro", color: "#FF5D01" },
+	{ name: "React Router", color: "#e15156" },
 	{ name: "Vite", color: "#646CFF" },
+	{ name: "Stripe.js", color: "#625bf6" },
 	{ name: "Google Maps API", color: "#34A853" }
 ]
 

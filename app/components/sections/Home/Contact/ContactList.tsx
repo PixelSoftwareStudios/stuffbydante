@@ -4,7 +4,7 @@ import mailIcon from "@/assets/icons/mail_icon.svg";
 
 export const ContactList = () => {
 	return (
-		<div>
+		<div className="ml-4">
 			<span className="font-medium">
 				Best way is through 
 				<Link
@@ -16,7 +16,7 @@ export const ContactList = () => {
 				</Link>
 			</span>
 			<div>
-				<p className="my-4">Or mail me at:</p>
+				<p className="my-4">Or email me at:</p>
 				<Snippet 
 					symbol={
 						<Image

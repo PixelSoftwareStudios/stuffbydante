@@ -9,7 +9,7 @@ import {
 	Link,
 } from "@nextui-org/react";
 
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 
 interface NavRoute {
 	name: string
@@ -74,7 +74,7 @@ export const Header = () => {
 					<NavbarItem key={i}>
 						<Link
 							href={route.path}
-							className={`p-2 text-white ${i == 0 && 'pl-0'}`}
+							className={`p-2 text-white ${i === 0 && 'pl-0'}`}
 						>
 							{route.name}
 						</Link>
